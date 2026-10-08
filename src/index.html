@@ -1,0 +1,25 @@
+<!doctype html>
+<html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Jubilant Interior Solution — Quotation Manager</title><link rel="stylesheet" href="styles.css"></head>
+<body>
+<div id="app">
+<aside class="sidebar">
+  <div class="brandCard"><img src="../assets/jubilant-logo.png" alt="Jubilant Interior Solution logo"></div><div class="brandName"><b>INTERIOR DESIGN STUDIO</b><span>QUOTATION & PROJECT MANAGER</span></div>
+  <div class="workspace"><small>WORKSPACE</small><strong id="businessSide">Interior Studio</strong></div>
+  <nav>
+    <button class="nav active" data-page="dashboard"><i>⌂</i>Dashboard</button>
+    <button class="nav" data-page="quotes"><i>▤</i>Quotations</button>
+    <button class="nav" data-page="clients"><i>♙</i>Clients</button>
+    <button class="nav" data-page="projects"><i>▦</i>Projects</button>
+    <button class="nav" data-page="catalog"><i>◇</i>Services & Materials</button>
+    <button class="nav" data-page="settings"><i>⚙</i>Settings</button>
+  </nav>
+  <div class="sideBottom"><button id="backupBtn">↥ Backup data</button><button id="restoreBtn">↧ Restore data</button><div class="version">Jubilant Interior Solution v3.0 • Elite PDF Edition</div></div>
+</aside>
+<main>
+<header><div><div class="crumb">BUSINESS MANAGEMENT</div><h1 id="pageTitle">Dashboard</h1></div><div class="headerActions"><button class="searchBtn" id="globalSearch">⌕ Search</button><button class="light" id="exportPDF">Export PDF</button><button class="primary" id="newQuote">＋ New quotation</button></div></header>
+<div id="content"></div>
+</main>
+</div>
+<div id="modalRoot"></div>
+<script src="app.js"></script>
+</body></html>

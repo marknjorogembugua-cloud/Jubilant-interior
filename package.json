@@ -1,0 +1,30 @@
+{
+  "name": "interior-quote-manager",
+  "version": "2.0.0",
+  "description": "Professional desktop quotation manager for interior design businesses",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron .",
+    "build": "electron-builder"
+  },
+  "build": {
+    "appId": "com.jubilantinteriorsolution.quotationmanager",
+    "productName": "Jubilant Interior Solution",
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "assets/icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  },
+  "devDependencies": {
+    "electron": "^39.0.0",
+    "electron-builder": "^26.0.12"
+  }
+}
